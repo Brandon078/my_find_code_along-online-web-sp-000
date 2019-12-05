@@ -1,15 +1,9 @@
 require 'pry'
 
-def my_all?(collection)
-  i = 0
-  return_values = []
+def my_find(collection)
+  i - 0
   while i < collection.length
-    return_values << yield(collection[i])
+    yield(collection[i])
     i += 1
-    binding.pry
-  end
-  if return_values.include?(false)
-    false
-  else true
   end
 end
