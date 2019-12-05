@@ -5,8 +5,8 @@ def my_all?(collection)
   return_values = []
   while i < collection.length
     return_values << yield(collection[i])
-    binding.pry
     i += 1
+    binding.pry 
   end
   if return_values.include?(false)
     false
